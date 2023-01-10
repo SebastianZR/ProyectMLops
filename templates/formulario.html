@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="es"> <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Prediccion Iris</title>
+    </head>
+    <body>
+        <form method="POST" action="{{url_for('predecir')}}">
+            <input name="SL" required type="text" inputmode="numeric"  placeholder="Sepal Lenght">
+            <br><br>
+            <input name="SW" required type="text" inputmode="numeric" placeholder="Sepal Width">
+            <br><br>
+            <input name="PL" required type="text" inputmode="numeric" placeholder="Petal Lenght">
+            <br><br>
+            <input name="PW" required type="text" inputmode="numeric" placeholder="Petal Width">
+            <br><br>
+            <input type="submit" value="Predecir">
+        </form>
+    </body>
+</html>
